@@ -4,28 +4,4 @@
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
 </body>
-<?php
-
-$request = new HttpRequest();
-$request->setUrl('https://xbl.io/api/v2/friends');
-$request->setMethod(HTTP_METH_GET);
-
-$request->setQueryData(array(
-  'xuid' => '2535440036473885'
-));
-
-$request->setHeaders(array(
-  'postman-token' => '2b83ae83-b2b4-d00b-572b-32f9824758b7',
-  'cache-control' => 'no-cache',
-  'x-authorization' => 'gkwksgwsggws8cgs48okwooo4g8sc4g4ows'
-));
-
-try {
-  $response = $request->send();
-
-  echo $response->getBody();
-} catch (HttpException $ex) {
-  echo $ex;
-}
-?>
 </html>
