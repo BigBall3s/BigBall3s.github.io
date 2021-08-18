@@ -12,12 +12,14 @@ var settings = {
   "method": "GET",
   "headers": {
     'Content-Type': 'text/plain'
-   document.write(settings)
   }
 }
 $.ajax(settings).done(function (response) {
   console.log(response);
 });
+</script>
+<script type="text/javascript">
+document.write(settings)
 </script>
 </body>
 </html>
