@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
 <script src="jquery-3.6.0.min.js"></script>
 <script>
 var settings = {
@@ -18,6 +16,7 @@ var settings = {
 
 $.ajax(settings).done(function (response) {
   console.log(response);
+document.write(response);
 });
 </script>
 </body>
