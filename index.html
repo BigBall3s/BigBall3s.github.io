@@ -8,12 +8,13 @@
 var settings = {
   "async": true,
   "crossDomain": true,
-  "url": "https://xbl.io/api/v2/account/2535440036473885",
+  "url": "https://xapi.us/v2/gamertag/2535440036473885",
   "method": "GET",
   "headers": {
-    "x-authorization": "gkwksgwsggws8cgs48okwooo4g8sc4g4ows",
+    "x-auth": "e9b13b20227fb3e76131c12822683253708f0691",
+    "content-type": "application/json",
     "cache-control": "no-cache",
-    "postman-token": "6fc261ce-472f-a25d-c518-75c524a8bf84"
+    "postman-token": "24f5681b-3c6e-33f2-c382-373ad58b7712"
   }
 }
 
@@ -23,3 +24,7 @@ $.ajax(settings).done(function (response) {
 </script>
 </body>
 </html>
+
+So basically this is where I'm at
+The presence of the authorization header triggers a preflight request in the browser that doesn't occur in Postman
+and I guess the API can't process it because it returns status code 500
