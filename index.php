@@ -1,7 +1,3 @@
-<!DOCTYPE html>
-<html>
-<body>
-<?php
 header('Access-Control-Allow-Origin: *');
 header("Access-Control-Allow-Methods: HEAD, GET, POST, PUT, PATCH, DELETE, OPTIONS");
 header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method,Access-Control-Request-Headers, Authorization");
@@ -13,26 +9,3 @@ header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Conte
 header("HTTP/1.1 200 OK");
 die();
 }
-?>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script>
-var settings = {
-  "async": true,
-  "crossDomain": true,
-  "url": "https://xbl.io/api/v2/account/2535440036473885",
-  "method": "GET",
-  "headers": {
-    "x-authorization": "gkwksgwsggws8cgs48okwooo4g8sc4g4ows",
-    "cache-control": "no-cache",
-    "postman-token": "88836628-b4d0-be3a-6577-e848cf0e2a40"
-  }
-}
-
-$.ajax(settings).done(function (response) {
-  console.log(response);
-});
-</script>
-</body>
-</html>
