@@ -1,5 +1,0 @@
-GET /api/v2/friends?xuid=2535440036473885 HTTP/1.1
-Host: xbl.io
-X-Authorization: gkwksgwsggws8cgs48okwooo4g8sc4g4ows
-Cache-Control: no-cache
-Postman-Token: fd59a5f8-4e59-b458-f27f-b1d8450aba24
